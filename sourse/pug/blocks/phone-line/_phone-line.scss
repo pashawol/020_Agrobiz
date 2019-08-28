@@ -1,51 +1,121 @@
 .phone-line {
 	background-color: $primary;
-	padding: rem(10) rem(10);
 	position: fixed;
+	padding: 0;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	font-size: rem(20);
+	overflow: hidden;
+
 	// text-transform: uppercase;
-	a{
-		color: #fff;
-		&:hover{
-			text-decoration: none;;
+	&::after {
+		content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 60px;
+    background: #fff;
+    opacity: .5;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.7)),color-stop(50%,#fff),to(rgba(255,255,255,.7)));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,.7) 0,#fff 50%,rgba(255,255,255,.7) 100%);
+    background: -o-linear-gradient(top,rgba(255,255,255,.7) 0,#fff 50%,rgba(255,255,255,.7) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,.7) 0,#fff 50%,rgba(255,255,255,.7) 100%);
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    z-index: -1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    -webkit-animation-name: slideme;
+    animation-name: slideme;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 50ms;
+    animation-delay: 50ms;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+		@keyframes slideme {
+			0% {
+				left: -30px;
+				margin-left: 0
+			}
+
+			30% {
+				left: 110%;
+				margin-left: 80px
+			}
+
+			100% {
+				left: 110%;
+				margin-left: 80px
+			}
 		}
 	}
-	&__wrapper{
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+			;
+		}
+	}
+
+	&__wrapper {
+		padding: rem(10) rem(10);
 		display: flex;
 		align-items: center;
 		text-align: center;
 		justify-content: center;
 	}
-	.icon{
+
+	.icon {
 		font-size: rem(20);
 		color: #fff;
 		margin-right: rem(10);
 	}
+
 	@include media-breakpoint-up(xl) {}
+
 	@include media-breakpoint-up(lg) {}
+
 	@include media-breakpoint-up(md) {}
+
 	@include media-breakpoint-up(sm) {}
+
 	@include media-breakpoint-up(xs) {}
-	
+
 	//
-	@include media-breakpoint-between(md, xl) { }
-	
-	
+	@include media-breakpoint-between(md, xl) {}
+
+
 	//
 	@include media-breakpoint-only(xs) {}
+
 	@include media-breakpoint-only(sm) {}
+
 	@include media-breakpoint-only(md) {}
+
 	@include media-breakpoint-only(lg) {}
+
 	@include media-breakpoint-only(xl) {}
-	
+
 	//
 	@include media-breakpoint-down(xl) {}
+
 	@include media-breakpoint-down(lg) {}
+
 	@include media-breakpoint-down(md) {}
+
 	@include media-breakpoint-down(sm) {}
-	@include media-breakpoint-down(xs) {} 
+
+	@include media-breakpoint-down(xs) {}
 
 }
