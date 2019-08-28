@@ -1,0 +1,29 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2.mono Контактная информация
+			.row
+				.col-12.col-md
+					h3 ООО «Агробизнес»
+					+e.A.phone(href="tel:+78462074489")
+						+icon("phone") 
+						|+7 (846) 207-44-89
+					+e.A.mail(href="mailto:agrobiznes.63@gmail.com") 
+						+icon("mail")
+						|agrobiznes.63@gmail.com
+					+e.requisites Юр. адрес: 443022, Самарская область, город Самара, <br>проезд Мальцева 22, литера М , офис 17 А <br>ИНН 6318020144 <br>ОГРН 1166313150079 <br>ПАО Банк « Кузнецкий» (ПАО) г. Пенза <br>Р/С 40702810200260000143 <br>К/С 30101810200000000707 <br>БИК 045655707
+
+				.col
+					+form-wrap
+						h3 Напишите нам:
+						+input("Ваше имя")
+						+input("Ваш e-mail")
+						+input("Ваше сообщение","textarea")
+						.row
+							+e.check-col.col-12.col-lg
+								+polite
+							.col.d-flex.d-lg-block.col-lg-auto
+								+e.btn.btn-primary(type="submit") Отправить
+	// end s-contact

@@ -1,0 +1,36 @@
+mixin header-block()
+	// start header-block
+	+b.header-block.bg-wrap#header-block
+		+pic("header-img","jpg","bg")(class="picture-bg")
+		.container
+			+e.top-line
+				.row
+					+e.col.col-12.col-md-auto
+						+e.logo ООО «Агробизнес»
+					+e.col.d-none.d-md-flex.col
+						+e.A.phone(href="tel:+78462074489")
+							+icon("phone") 
+							|+7 (846) 207-44-89
+					+e.col.d-none.d-lg-flex.col-12.col-md-auto
+						+e.A.mail(href="mailto:agrobiznes.63@gmail.com") 
+							+icon("mail")
+							|agrobiznes.63@gmail.com
+					+e.col.d-none.d-md-flex.col-12.col-md-auto
+						+e.A.btn.btn-primary(href="#") Напишите нам
+			h1.mono Оптовые поставки замороженных и&nbsp;охлажденных продуктов питания
+			+e.catalog-wrapper
+				.row.justify-content-between
+					+e.item.col
+						+e.icon-wrapper.bg-yellow-dark
+							+icon("header-svg1")
+						+e.item-title Куриная продукция
+					+e.item.col
+						+e.icon-wrapper.bg-red-dark
+							+icon("header-svg2")
+						+e.item-title Мясная продукция
+					+e.item.col
+						+e.icon-wrapper.bg-blue-dark
+							+icon("header-svg3")
+						+e.item-title Рыбная продукция
+
+	// end header-block
