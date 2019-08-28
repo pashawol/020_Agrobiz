@@ -18,11 +18,11 @@
       <!-- start header-block-->
       <div class="header-block bg-wrap" id="header-block">
         <!-- picture-->
-        <picture class="lazy picture-bg"> 
-          <source srcset="#" data-srcset="img/@2x/webp/header-img.webp" type="image/webp" media="(min-width:576px)"/>
-          <source srcset="#" data-srcset="img/@1x/webp/header-img.webp" type="image/webp"/>
-          <source srcset="#" data-srcset="img/@2x/header-img.jpg" type="image/jpg" media="(min-width:576px)"/>
-          <source srcset="#" data-srcset="img/@1x/header-img.jpg" type="image/jpg"/><img class="object-fit-js" src="#" data-src="img/@2x/header-img.jpg" alt=""/>
+        <picture class="picture-bg"> 
+          <source srcset="img/@2x/webp/header-img.webp" type="image/webp" media="(min-width:576px)"/>
+          <source srcset="img/@1x/webp/header-img.webp" type="image/webp"/>
+          <source srcset="img/@2x/header-img.jpg" type="image/jpg" media="(min-width:576px)"/>
+          <source srcset="img/@1x/header-img.jpg" type="image/jpg"/><img class="object-fit-js" src="img/@2x/header-img.jpg" alt=""/>
         </picture>
         <!-- /picture-->
         <div class="container">
@@ -203,6 +203,7 @@
     </div>
     <!-- #modal-call-->
     <!-- modal-->
+    <script src="js/lazy.js"></script>
     <script src="js/jquery.min.js"></script>
     <!-- полифил для picture-->
     <script src="libs/picturefill.min.js"></script>
