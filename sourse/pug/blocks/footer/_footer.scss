@@ -1,11 +1,18 @@
 .footer {
 	background-color: #8e8e8e;
   font-size: rem(14);
-  color: #fff;
-  padding: rem(20) 0;
+  color: #ffffff;
+  padding: rem(20) 0 rem(70);
+  @include media-breakpoint-up(md) {
+    padding: rem(20) 0;
+  }
   a{
     color: #fff;
-    text-decoration: underline;
+    // text-decoration: underline;
+    border-bottom: 1px solid;
+    &:hover{
+      text-decoration: none;
+    }
   }
 // 
 @include media-breakpoint-up(xl) {}

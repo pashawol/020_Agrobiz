@@ -18,8 +18,8 @@ mixin s-contact()
 				.col
 					+form-wrap
 						h3 Напишите нам:
-						+input("Ваше имя")
-						+input("Ваш e-mail")
+						+input("Ваше имя")(required)
+						+input("Ваш e-mail")(required)
 						+input("Ваше сообщение","textarea")
 						.row
 							+e.check-col.col-12.col-lg
