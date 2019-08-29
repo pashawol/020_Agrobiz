@@ -27,7 +27,8 @@
 		}
 		// font-size: rem(26);
 		font-weight: bold;
-		color: #f43232;
+		color: #f43232 !important;
+		text-decoration: none !important;
 	}
 	&__phone{
 		@include media-breakpoint-up(lg) {

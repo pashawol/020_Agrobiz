@@ -28,9 +28,7 @@
         <div class="container">
           <div class="header-block__top-line">
             <div class="row">
-              <div class="header-block__col col-12 col-md-auto">
-                <div class="header-block__logo">ООО «Агробизнес»
-                </div>
+              <div class="header-block__col col-12 col-md-auto"><a class="header-block__logo" href="/">ООО «Агробизнес»</a>
               </div>
               <div class="header-block__col d-none d-md-flex col"><a class="header-block__phone" href="tel:+78462074489">
                 <svg class="icon icon-phone ">
@@ -121,7 +119,7 @@
               <h3>ООО «Агробизнес»</h3><a class="s-contact__phone" href="tel:+78462074489">
               <svg class="icon icon-phone ">
                 <use xlink:href="img/svg/sprite.svg#phone"></use>
-              </svg>+7 (846) 207-44-89</a><a class="s-contact__mail" href="mailto:agrobiznes.63@gmail.com"> 
+              </svg>+7 (846) 207-44-89</a><br/><a class="s-contact__mail" href="mailto:agrobiznes.63@gmail.com"> 
               <svg class="icon icon-mail ">
                 <use xlink:href="img/svg/sprite.svg#mail"></use>
               </svg>agrobiznes.63@gmail.com</a>
@@ -132,10 +130,10 @@
               <div class="form-wrap">
                 <form>
                   <h3>Напишите нам:</h3>
-                  <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Ваше имя" name="text" required="required"/>
+                  <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Ваше имя" name="name" required="required"/>
                   </div>
                   <!-- +e.input-wrap-->
-                  <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Ваш e-mail" name="text" required="required"/>
+                  <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="email" placeholder="Ваш e-mail" name="email" required="required"/>
                   </div>
                   <!-- +e.input-wrap-->
                   <div class="form-wrap__input-wrap"><textarea class="form-wrap__input form-control" placeholder="Ваше сообщение" name="textarea"></textarea>
@@ -144,7 +142,7 @@
                   <div class="row">
                     <div class="form-wrap__check-col col-12 col-lg">
                       <div class="form-wrap__polite">
-                        <label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text">Даю согласие на обработку и хранение моих персональных данных в соотствествии с <a href="#">условиями.</a></small>
+                        <label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text">Даю согласие на обработку и хранение моих персональных данных в соотствествии с <a href="policy.pdf" target="_blank">условиями.</a></small>
                         </label>
                       </div>
                     </div>
@@ -164,42 +162,19 @@
         <div class="container">
           <div class="row">
             <div class="col">© 2019 ООО «Агробизнес»</div>
-            <div class="col text-right"><a href="#">Политика конфиденциальности</a></div>
+            <div class="col text-right"><a href="policy.pdf" target="_blank">Политика конфиденциальности</a></div>
           </div>
         </div>
       </footer>
-      <!-- start phone-line-->
-      <section class="phone-line d-block d-md-none section lazy-background" id="phone-line"><a href="tel:+78462074489">
-          <div class="container">
-            <div class="phone-line__wrapper">
-              <svg class="icon icon-phone ">
-                <use xlink:href="img/svg/sprite.svg#phone"></use>
-              </svg>
-              <div class="phone-line__phone">+7 (846) 207-44-89
-              </div>
-            </div>
-          </div></a>
-      </section>
+      <!-- start phone-line--><a class="phone-line d-md-none" href="tel:+78462074489"> 
+      <svg class="icon icon-phone ">
+        <use xlink:href="img/svg/sprite.svg#phone"></use>
+      </svg><span class="phone-line__phone">+7 (846) 207-44-89</span></a>
       <!-- end phone-line-->
     </div>
-    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-call">
-      <form>
-        <div class="text-center">
-          <div class="form-wrap__title h3 ttu">Обратный звонок
-          </div>
-          <p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
-        </div>
-        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="Ваше Имя" placeholder="text" name="Ваше Имя" required="required"/>
-        </div>
-        <!-- +e.input-wrap-->
-        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="Ваш телефон" placeholder="tel" name="Ваш телефон" required="required"/>
-        </div>
-        <!-- +e.input-wrap--><input class="form-wrap__btn btn btn-block btn-warning mb-4" type="submit" value="Рассчитать"/>
-        <div class="form-wrap__polite">
-          <label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text">Даю согласие на обработку и хранение моих персональных данных в соотствествии с <a href="#">условиями.</a></small>
-          </label>
-        </div>
-      </form>
+    <div class="zoom-anim-dialog mfp-hide modal-win modal-form" id="thanks">
+      <div class="h2">Спасибо за&nbsp;обращение! </div>
+      <div class="h3">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
     </div>
     <!-- #modal-call-->
     <!-- modal-->
@@ -216,5 +191,21 @@
     <script src="libs/svg4everybody-master/svg4everybody.min.js"></script>
     <!-- /for svg libs-->
     <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter-->
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(55108870, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/55108870" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter-->
   </body>
 </html>

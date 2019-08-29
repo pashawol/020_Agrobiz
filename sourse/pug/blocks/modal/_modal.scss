@@ -1,8 +1,13 @@
 .modal-win {
 	display: block;
 	position: relative;
+	max-width: 485px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	text-align: center;
+	padding: rem(30) rem(20);
 	.modal-content {
-		// max-width: 485px;
 		// padding-right: 40px 15px;
 	}
 	.mfp-close {
@@ -11,7 +16,9 @@
 		font-weight: 100;
 	}   
 }
-
+.h2{
+	@extend .mono;
+}
 a {
 	outline: 0 !important;
 }

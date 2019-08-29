@@ -9,6 +9,11 @@
 		 resize: none;
  	}
  	&__btn{
+		 &.disabled{
+
+			 pointer-events: none;
+			}
+		 
  		cursor: pointer;
  	}
  	label{

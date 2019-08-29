@@ -1,9 +1,7 @@
 mixin phone-line()
 	// start phone-line
-	+b.SECTION.phone-line.d-block.d-md-none.section.lazy-background#phone-line&attributes(attributes)
-		a(href="tel:+78462074489")
-			.container
-				+e.wrapper
-					+icon("phone")
-					+e.phone +7 (846) 207-44-89
+	+b.phone-line.d-md-none(href="tel:+78462074489") 
+		+icon("phone")
+		+e.phone +7 (846) 207-44-89
+				//- +e.wrapper
 	// end phone-line

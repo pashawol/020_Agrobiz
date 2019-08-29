@@ -10,6 +10,7 @@ mixin s-contact()
 					+e.A.phone(href="tel:+78462074489")
 						+icon("phone") 
 						|+7 (846) 207-44-89
+					br
 					+e.A.mail(href="mailto:agrobiznes.63@gmail.com") 
 						+icon("mail")
 						|agrobiznes.63@gmail.com
@@ -18,12 +19,13 @@ mixin s-contact()
 				.col
 					+form-wrap
 						h3 Напишите нам:
-						+input("Ваше имя")(required)
-						+input("Ваш e-mail")(required)
+						+input("Ваше имя",'text','','name')(required)
+						+input("Ваш e-mail",'email')(required)
 						+input("Ваше сообщение","textarea")
 						.row
 							+e.check-col.col-12.col-lg
 								+polite
 							.col.d-flex.d-lg-block.col-lg-auto
 								+e.btn.btn-primary(type="submit") Отправить
+						//- +e.btn.btn-primary.popup-with-move-anim(href="#thanks") Отправить
 	// end s-contact

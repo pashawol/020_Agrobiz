@@ -7,7 +7,12 @@
 	width: 100%;
 	font-size: rem(20);
 	overflow: hidden;
-
+	padding: rem(10) rem(10);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	color: #ffffff !important;
 	// text-transform: uppercase;
 	&::after {
 		content: "";
@@ -69,11 +74,7 @@
 	}
 
 	&__wrapper {
-		padding: rem(10) rem(10);
-		display: flex;
-		align-items: center;
-		text-align: center;
-		justify-content: center;
+	
 	}
 
 	.icon {

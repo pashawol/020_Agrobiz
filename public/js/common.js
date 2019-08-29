@@ -20,8 +20,20 @@ jQuery(document).ready(function ($) {
  
 
 
-
-
+function checkForm() { 
+	if($(".custom-input__input").is(":checked")){
+		document.querySelector(".form-wrap__btn").classList.remove("disabled")
+	}
+	else{
+		document.querySelector(".form-wrap__btn").classList.add("disabled")
+		
+	}
+}
+checkForm()
+$(".custom-input__input").change(function(){
+	checkForm();
+})
+checkForm()
 	// form
 	$("form").submit(function () { //Change
 		var th = $(this);
@@ -42,11 +54,28 @@ jQuery(document).ready(function ($) {
 				// Done Functions
 				th.trigger("reset");
 				// $.magnificPopup.close();
-				ym(53383120, 'reachGoal', 'zakaz');
+				// ym(53383120, 'reachGoal', 'zakaz');
 			}, 4000);
 		});
 		return false;
 	});
 	// /form
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: true,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in',
+		tClose: 'Закрыть (Esc)',
+	});
 });
 
